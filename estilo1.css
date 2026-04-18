@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header1, .header2 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.header2 {
+	padding: 20px;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.divEsquerda1 {
+	padding: 20px;
+	background-color: black;
+	height: 0%;
+	border-radius: 0 40px 40px 0;
+	padding-left: 70px;
+}
+.iconesHeader {
+	display: flex;
+	align-content: center;
+}
+.imgIconesHeader {
+	width: 25px;
+	height: 25px;
+	margin: 3px;
+}
+.divDireita1 {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.img2 {
+	width: 330px;
+	height: 80px;
+}
+input {
+	border: none;
+	background-color: white;
+}
+.pesquisa1, .pesquisa2 {
+	border: solid #8B8B8B 1px;
+	border-radius: 30px;
+	padding: 10px;
+	right: 60px;
+}
+.pesquisa1 {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	text-align: left;
+	padding-right: 20px;
+	width: 300px;
+}
+.pesquisa2 {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ad3434;
+	height: 60px;
+}
+.menu {
+	color: whitesmoke;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+.texto {
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+h1 {
+	color: #438aa7;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+p, h1 {
+	text-align: left;
+}
+.final {
+	width: 100%;
+}
+.imgsFinais {
+	width: 100px;
+}
