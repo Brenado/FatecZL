@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes JS</title>
+    <style>
+        .conteudo-semaforo {
+            padding: 4%;
+        }
+        .semaforo {
+            background-color: rgb(56, 56, 56);
+            border: none;
+            border-radius: 10px;
+            padding: 6px;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .borda, .vermelho, .amarelo, .verde {
+            border: none;
+            border-radius: 50%;
+        }
+        .borda {
+            background-color: rgb(104, 104, 104);
+            width: 88px;
+            height: 88px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 7px;
+        }
+        .vermelho, .amarelo, .verde {
+            background-color: rgb(100, 0, 0);
+            border: none;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        .vermelho {background-color: darkRed;}
+        .amarelo {background-color: darkGoldenRod;}
+        .verde {background-color: darkgreen;}
+    </style>
 </head>
 <body>
     
@@ -14,11 +53,84 @@
 <hr>
 
 <h1>2- Limpando conteúdo</h1>
-<textarea name="caixa-texto" id="caixa-texto" rows="3"></textarea><br>
-<button id="btn-registrar">Registrar</button>
+<form id="formulario2">
+    <textarea name="caixa-texto" id="caixa-texto" rows="3"></textarea><br>
+    <button type="submit">Registrar</button>
+</form>
 
-<div id="div-registro" style="background-color: beige;"></div>
-<button id="btn_limpar">Limpar div</button>
+<div id="div-registro" style="background-color: rgb(197, 197, 197);"></div>
+<button id="btn-limpar">Limpar div</button>
+
+<hr>
+
+<h1>3- Pergunta com múltiplas opções</h1>
+<form id="formulario3">
+    <label>Qunato é 2 + 2?</label><br>
+    <input type="radio" id="1" name="dois-mais-dois" value="1">
+    <label for="1">1</label><br>
+    <input type="radio" id="2" name="dois-mais-dois" value="2">
+    <label for="2">2</label><br>
+    <input type="radio" id="3" name="dois-mais-dois" value="3">
+    <label for="3">3</label><br>
+    <input type="radio" id="4" name="dois-mais-dois" value="4">
+    <label for="4">4</label><br>
+    <button type="submit">Verificar</button><br>
+    <span id="acerto"></span>
+</form>
+
+<hr>
+
+<h1>Lista de Compras:</h1>
+<form id="formulario4">
+    <label for="item">Adicionar item:</label><br>
+    <input type="text" id="item" name="item">
+    <button type="submit">Adicionar</button>
+</form>
+
+<p><strong>Itens:</strong></p>
+<ul id="lista"></ul>
+
+<hr>
+
+<h1>5- Conversor de temperatura</h1>
+<p>Temperatura em Celsius:</p>
+<input type="text" id="temperatura"><br>
+<p>
+<strong>Temperatura em Fahrenheit:</strong>
+</p>
+<p id="tempFah"></p>
+<button id="btn-converter">Coverter</button>
+
+<hr>
+
+<h1>6- Simulador de semáforo</h1>
+
+<div class="conteudo-semaforo">
+    <div class="semaforo">
+        <div class="borda">
+            <div class="vermelho" id="corRed"></div>
+        </div>
+        <div class="borda">
+            <div class="amarelo" id="corYel"></div>
+        </div>
+        <div class="borda">
+            <div class="verde" id="corGre"></div>
+        </div>
+    </div>
+</div>
+
+<button id="btn-vermelho" style="background-color: red;">Vermelho</button>
+<button id="btn-amarelo" style="background-color: yellow;">Amarelo</button>
+<button id="btn-verde" style="background-color: green;">Verde</button>
+
+<hr>
+
+<h1>7- Gerador de tabuada</h1>
+<label for="numero">Numero:</label>
+<input type="number" name="numero" id="numero"><br>
+<button id="btn-numero">Mostrar tabuada</button>
+
+<pre id="tabuada"></pre>
 
 <script src="testes.js"></script>
 
