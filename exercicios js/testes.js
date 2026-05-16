@@ -109,6 +109,7 @@ function tabuada() {
     let numero = Number(document.getElementById("numero").value);
     console.log(numero);
     let tabuada = document.getElementById("tabuada");
+    tabuada = "";
 
     for(let i = 0; i < 10; i++) {
         tabuada.innerHTML += numero + " . " + (i+1) + " = " + (numero * (i+1)) + "<br>";
